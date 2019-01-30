@@ -1,0 +1,24 @@
+{
+	"Languages": [
+		{
+			"name": "c++98",
+			"sourceSuffix": "cpp",
+			"progSuffix": "",
+			"compile": "g++ %s -o %p -DONLINE_JUDGE -lm -O2 -Wall -std=c++98",
+			"intLang": false,
+			"exec": "%p"
+		},
+		{
+			"name": "python3",
+			"sourceSuffix": "py",
+			"intLang": true,
+			"exec": "python3 %s"
+		},
+		{
+			"name": "python2",
+			"sourceSuffix": "py",
+			"intLang": true,
+			"exec": "python2 %s"
+		}
+	]
+}
