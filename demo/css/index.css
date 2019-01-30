@@ -1,0 +1,68 @@
+/* index.html */
+
+.title {
+    font-size: 20px;
+}
+
+/*
+.chat *:not(a){
+    color: #222222;
+}
+*/
+.chat .reply {
+    width: 100%;
+    float: right;
+    font-size: 14px;
+    /*transition: height 0.5s;*/
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.chat .reply>.frame>.li {
+    color: #222222;
+    padding: 7px 8px;
+}
+
+.chat .comment-footer {
+    color: #444444;
+    float: right;
+}
+
+.chat .comment-footer:before {
+    content: "—";
+}
+
+.chat .comment-footer>a {
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.chat .comment-footer>span:nth-child(2) {
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.chat .comment-footer>.fa-chevron-down {
+    color: #3399FF;
+    /* margin-right: 3px; */
+    transition: transform 0.5s;
+    transform-origin: 50% 60%;
+    cursor: pointer;
+}
+
+.chat .comment-footer .fa-commenting {
+    /* margin-left: 3px; */
+    color: #3399FF;
+    cursor: pointer;
+}
+
+.chat .reply-form {
+    width: 100%;
+    float: right;
+}
+
+.chat .reply-form textarea {
+    resize: vertical;
+    /*width: 100%;*/
+    width: calc(100% - 5px);
+}

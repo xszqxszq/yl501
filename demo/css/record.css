@@ -1,0 +1,18 @@
+.record .waiting             { color: #646464; } /* -1 */
+.record .unknownError        { color: #646464; } /*  0 */
+.record .accepted            { color: #009900; } /*  1 */
+.record .wrongAnswer         { color: #ff3300; } /*  2 */
+.record .runtimeError        { color: #ff3366; } /*  3 */
+.record .compileError        { color: #ff9933; } /*  4 */
+.record .timeLimitExceeded   { color: #0000ff; } /*  5 */
+.record .memoryLimitExceeded { color: #0000ff; } /*  6 */
+.record .outputLimitExceeded { color: #0000ff; } /*  7 */
+.record .judging             { color: #646464; } /*  8 */
+
+.record                        { font-size: 16px;         }
+.record .li:first-child        { font-size: 20px;         }
+.record .li>div              { display:   inline-block; }
+.record .li>div:nth-child(1) { width:     35px;         }
+.record .li>div:nth-child(2) { width:    200px;         }
+.record .li>div:nth-child(3) { width:     80px;         }
+.record .li>div:nth-child(4) { width:     80px;         }

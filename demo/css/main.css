@@ -1,0 +1,242 @@
+/* main */
+
+body {
+    font-family: sans-serif;
+    background-color: #F1F1F1;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 0;
+}
+
+a {
+    color: #0099FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0066FF;
+}
+
+/* ul:list table transition > frame:list table transition > li */
+
+.frame.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul.list {
+    margin: 10px;
+}
+
+.ul+.ul.list {
+    margin-top: 0;
+}
+
+div>.ul.list {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div>.ul.list:first-child {
+    margin-top: 0;
+}
+
+div>.ul.list:last-child {
+    margin-bottom: 0;
+}
+
+.list>.li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.list>.li {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    background-color: #FFFFFF;
+    padding: 14px 16px;
+}
+
+.frame.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul.table {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0;
+    margin: 10px;
+}
+
+.ul+.ul.table {
+    margin-top: 0;
+}
+
+div>.ul.table {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div>.ul.table:first-child {
+    margin-top: 0;
+}
+
+div>.ul.table:last-child {
+    margin-bottom: 0;
+}
+
+.table>.li {
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    background-color: #FFFFFF;
+    padding: 14px 16px;
+}
+
+.table>.li:first-child {
+    border-top: 1px solid #F1F1F1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.table>.li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.transition>.li {
+    transition: background-color 0.5s;
+}
+
+.transition>.li:hover {
+    background-color: #F1F1F1;
+}
+
+/* pagination */
+
+.frame.pagination {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.pagination>.li {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    background-color: #FFFFFF;
+    padding: 4px 0;
+    /* min-width: 50px; */
+    width: 5%;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.pagination>.li.active {
+    background-color: #3399FF;
+    color: #FFFFFF;
+}
+
+.pagination>.li.active:hover {
+    background-color: #44BBFF;
+}
+
+.pagination>.li:not(.active):hover {
+    background-color: #F1F1F1;
+}
+
+button {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+button.green {
+    background-color: #4CAF50;
+}
+
+button.green:hover {
+    background-color: #2C8F30;
+}
+
+button.blue {
+    background-color: #3399FF;
+}
+
+button.blue:hover {
+    background-color: #1379DF;
+}
+
+button.red {
+    background-color: #F44336;
+}
+
+button.red:hover {
+    background-color: #D42316;
+}
+
+/*Other*/
+
+nav {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    line-height: 20px;
+    width: 100%;
+    top: 0;
+    z-index: 233333;
+}
+
+nav>div {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #3399FF;
+}
+
+nav>div>div {
+    float: left;
+}
+
+nav>div>div>a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    min-width: 50px;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+nav>div>div>a:hover {
+    color: #FFFFFF;
+    background-color: #0066CC;
+}
+
+header {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    background-color: #F9F9F9;
+    width: 100%;
+    line-height: 30px;
+    padding: 60px 0 10px 0;
+}
+
+header>h1 {
+    display: inline;
+    font-size: 25px;
+    padding-left: 10%;
+    margin-left: 10px;
+}
+
+main {
+    padding: 0 10% 0 10%;
+}

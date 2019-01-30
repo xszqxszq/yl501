@@ -1,0 +1,13 @@
+.MarkupLanguage {
+}
+
+.MarkupLanguage .option>.frame  {
+    flex-direction: row;
+}
+
+.MarkupLanguage .option>.frame>.li {
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+/* problem.html */
+
+main.problem {
+    display: flex;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+main.problem article {
+    width: 60%;
+}
+/*
+main.problem article .li span {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+*/
+main.problem article .li a {
+    margin-left: 10px;
+}
+
+main.problem aside {
+    width: 40%;
+}
+.listLeft {
+    display:inline-block;
+    min-width: 100px;
+    color: #888888;
+}
+pre {
+    font-size: 14px;
+    white-space: pre-wrap; /*css-3*/
+    white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+    white-space: -pre-wrap; /*Opera4-6*/
+    white-space: -o-pre-wrap; /*Opera7*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
+}
