@@ -1,0 +1,10 @@
+{
+	"time": 1000,
+	"memory": 131072,
+	"comparer": "",
+	"inSuffix": ".in",
+	"outSuffix": ".out",
+	"auto": true,
+	"begin": 1,
+	"end": 3
+}
